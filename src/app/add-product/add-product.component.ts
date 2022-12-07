@@ -28,6 +28,22 @@ export class AddProductComponent {
       (response:any)=>
       {
         console.log(response)
+        if (response.status=="success")
+        {
+          alert("Product added successfully")
+          this.pcode=""
+          this.pname=""
+          this.mandate=""
+          this.expdate=""
+          this.brand=""
+          this.price=""
+          this.seller=""
+          this.distributor=""
+
+        }
+        else{
+          alert("Something went wrong")
+        }
   }
     )
 
